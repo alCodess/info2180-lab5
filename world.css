@@ -1,1 +1,122 @@
 /* Add your own styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+header {
+  background: #475569;
+  color: #ffffff;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+#controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+#controls label {
+  font-weight: 600;
+}
+
+#controls input {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+#controls input:focus {
+  outline: none;
+  border-color: #14b8a6;
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.25);
+}
+
+#controls button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background: #14b8a6;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#controls button:hover {
+  background: #0f9488;
+}
+
+#result {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px;
+  min-height: 60px;
+}
+
+#result ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#result li {
+  padding: 10px 8px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+#result li:last-child {
+  border-bottom: none;
+}
+
+#result li:nth-child(even) {
+  background: #f8fafc;
+}
+
+/* Ready for Exercises 4 and 5 (when the list becomes a table) */
+#result table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#result th,
+#result td {
+  padding: 10px 8px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+#result th {
+  background: #f1f5f9;
+}
+
+#result tr:nth-child(even) td {
+  background: #f8fafc;
+}
